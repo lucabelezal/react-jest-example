@@ -1,6 +1,6 @@
 {
-  "name": "tttt",
-  "version": "0.1.0",
+  "name": "react-jest-example",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
@@ -19,8 +19,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "_comment": "react-scripts test",
+    "eject": "react-scripts eject",
+    "test": "jest --coverage"
   },
   "eslintConfig": {
     "extends": [
@@ -38,6 +39,20 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "expect": "^25.1.0",
+    "jest-sonar-reporter": "^2.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverage": true,
+    "testResultsProcessor": "jest-sonar-reporter",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "/test/"
     ]
   }
 }
