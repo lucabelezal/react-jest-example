@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testExecutions version="1">
+  <file path="/Users/l.b.do.nascimento/GITHUB/react-jest-example/src/index.test.js">
+    <testCase name="fn adds 1" duration="4"/>
+  </file>
+</testExecutions>
